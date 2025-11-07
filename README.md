@@ -48,4 +48,4 @@ I really enjoyed doing this assignment and it also helped dexpand my knowledge o
 
 ## Live Deployment
 You can view my deployed and public portfolio here:  
-👉 [https://assignment-2-portfolio.onrender.com](https://assignment-2-portfolio.onrender.com)
+👉 [https://assignment-2-portfolio-yzh4.onrender.com]
