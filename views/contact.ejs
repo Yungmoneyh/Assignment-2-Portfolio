@@ -1,0 +1,53 @@
+<!-- Include the shared header partial and set the page title to "Contact" -->
+<%- include('partials/header', { title: 'Contact' }) %>
+
+<!-- Contact Page Section -->
+<section class="container">
+
+  <!-- Page Heading -->
+  <h1>Contact Me</h1>
+
+  <!-- Short intro message -->
+  <p>If you'd like to collaborate or ask about my work, send me a message below.</p>
+
+  <!-- Display success or error messages after form submission -->
+  <% if (success) { %>
+    <div class="alert success">✅ Your message has been sent. Thank you!</div>
+  <% } else if (error) { %>
+    <div class="alert error">❌ Something went wrong. Please try again later.</div>
+  <% } %>
+
+  <!-- Contact form that sends data to the /contact route using POST method -->
+  <form action="/contact" method="POST" class="contact-form">
+
+    <!-- User name input -->
+    <input type="text" name="name" placeholder="Your name" required />
+
+    <!-- User email input -->
+    <input type="email" name="email" placeholder="Your email" required />
+
+    <!-- Message text area -->
+    <textarea name="message" rows="6" placeholder="Your message" required></textarea>
+
+    <!-- Simple "I am not a robot" checkbox for validation -->
+    <div class="not-robot">
+      <input type="checkbox" id="notRobot" name="notRobot" required />
+      <label for="notRobot">I am not a robot</label>
+    </div>
+
+    <!-- Submit button -->
+    <button type="submit" class="btn">Send Message</button>
+  </form>
+
+  <!-- Contact links (social media + email) -->
+  <div class="contact-links">
+    <a href="https://github.com/yungmoneyh" target="_blank">GitHub</a>
+    <a href="mailto:Hirosan.Ravichandran@ontariotechu.net" aria-label="Email">Email</a>
+    <a href="https://www.instagram.com/m0tiv8dd/" target="_blank">Instagram</a>
+    <a href="https://www.linkedin.com/in/hirosan-ravichandran-552a63395/" target="_blank">LinkedIn</a>
+  </div>
+
+</section>
+
+<!-- Include shared footer partial -->
+<%- include('partials/footer') %>

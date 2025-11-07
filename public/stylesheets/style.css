@@ -1,0 +1,423 @@
+/* --------------------------
+   Professional Dark Theme
+---------------------------*/
+
+/* Reset margins and paddings */
+* { box-sizing: border-box; margin:0; padding:0; }
+
+/* Page layout and background */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle at top, #0b0b0b 0%, #0b0b0b 40%, #0b0b0b 100%);
+  color: #e6e6e6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* --------------------------
+   NAVBAR STYLES
+---------------------------*/
+header { background: rgba(8,8,8,0.98); border-bottom: 1px solid rgba(255,255,255,0.03); }
+
+/* Navbar layout */
+.navbar { width: 90%; max-width:1200px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; padding:18px 0; }
+
+/* Brand name */
+.brand { color:#fff; font-weight:700; font-size:1.4rem; }
+
+/* Navigation links */
+nav a { color:#bdbdbd; text-decoration:none; margin-left:22px; font-weight:500; padding-bottom:4px; }
+nav a:hover { color:#00bcd4; border-bottom:2px solid #00bcd4; }
+nav a.active { color:#00bcd4; font-weight:600; }
+
+/* --------------------------
+   MAIN CONTAINER
+---------------------------*/
+.container {
+  width: 90%;
+  max-width:1000px;
+  margin: 60px auto;
+  background: linear-gradient(180deg, rgba(20,20,20,0.6), rgba(12,12,12,0.85));
+  border-radius: 14px;
+  padding: 36px;
+  box-shadow: 0 18px 45px rgba(0,0,0,0.6);
+  animation: fadeInUp 700ms ease both;
+}
+
+/* Simple fade-in animation */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* --------------------------
+   TEXT & HEADINGS
+---------------------------*/
+h1 { color: #00bcd4; font-size:2rem; margin-bottom:14px; }
+h2 { color:#00bcd4; margin-top:20px; margin-bottom:10px; }
+.lead { color: #dcdcdc; margin-bottom:18px; line-height:1.7; }
+
+/* --------------------------
+   BUTTONS
+---------------------------*/
+.btn {
+  display:inline-block;
+  background:#00bcd4;
+  color:#071019;
+  padding:10px 18px;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:600;
+  margin-right:10px;
+  transition: transform .16s ease, background .16s ease;
+}
+
+/* Outline button */
+.btn-outline { background: transparent; border: 1px solid rgba(255,255,255,0.06); color:#dcdcdc; }
+
+/* Hover effect */
+.btn:hover { transform: translateY(-3px); background:#0194a4; color:#fff; }
+
+/* --------------------------
+   CONTACT FORM
+---------------------------*/
+.contact-form { max-width:640px; margin: 18px auto 0; display:flex; flex-direction:column; gap:12px; }
+input[type="text"], input[type="email"], textarea {
+  background:#0f0f0f; border:1px solid rgba(255,255,255,0.04); color:#eaeaea; padding:12px; border-radius:8px;
+}
+
+/* Focus glow */
+input:focus, textarea:focus { outline:none; border-color:#00bcd4; box-shadow: 0 4px 18px rgba(0,188,212,0.06); }
+
+/* --------------------------
+   CONTACT LINKS
+---------------------------*/
+.contact-links a {
+  display: inline-block;
+  background-color: #00bcd4;
+  color: #ffffff;
+  padding: 10px 18px;
+  margin: 8px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  box-shadow: 0 0 10px rgba(0, 188, 212, 0.3);
+  transition: all 0.3s ease;
+}
+
+/* Hover glow */
+.contact-links a:hover {
+  background-color: #ffffff;
+  color: #000000;
+  box-shadow: 0 0 20px rgba(0, 188, 212, 0.6);
+  transform: translateY(-2px);
+}
+
+.contact-links {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* --------------------------
+   ALERTS
+---------------------------*/
+.alert { padding:12px; border-radius:8px; margin:8px 0; }
+.alert.success { background: rgba(0,188,212,0.08); border:1px solid rgba(0,188,212,0.12); color:#bff0f6; }
+.alert.error { background: rgba(255,100,100,0.06); border:1px solid rgba(255,100,100,0.08); color:#ffd7d7; }
+
+/* --------------------------
+   FOOTER
+---------------------------*/
+footer {
+  /* ========================= */
+/*      Modern Footer        */
+/* ========================= */
+
+/* Footer background and layout */
+/* ========================= */
+/*      Modern Footer        */
+/* ========================= */
+
+/* Footer layout */
+.modern-footer {
+  background-color: #000;
+  border-top: 2px solid rgba(0, 224, 255, 0.3);
+  box-shadow: 0 -4px 25px rgba(0, 224, 255, 0.15);
+  text-align: center;
+  padding: 60px 20px;
+}
+
+/* Centered avatar */
+.footer-avatar {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 3px solid #00e0ff;
+  box-shadow: 0 0 25px rgba(0, 224, 255, 0.4);
+  display: block;
+  margin: 0 auto;
+}
+
+/* Text under avatar */
+.footer-text {
+  color: #ccc;
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 750px;
+  margin: 20px auto 0 auto;
+}
+
+/* Navigation buttons (Home, About, etc.) */
+.footer-links {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+/* Footer buttons styled like header boxes */
+.footer-btn {
+  background-color: #00bcd4;
+  color: #000;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 14px 36px;
+  border-radius: 12px;
+  letter-spacing: 0.8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 20px rgba(0, 224, 255, 0.4);
+}
+
+/* Hover transition for buttons */
+.footer-btn:hover {
+  background-color: #fff;
+  color: #000;
+  transform: translateY(-4px);
+  box-shadow: 0 0 30px rgba(0, 224, 255, 0.8);
+}
+
+/* Social icons */
+.footer-social {
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Circle icons */
+.footer-social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 2px solid #00e0ff;
+  color: #00e0ff;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+/* Icon hover glow */
+.footer-social-icon:hover {
+  background-color: #00e0ff;
+  color: #000;
+  transform: translateY(-3px);
+  box-shadow: 0 0 25px rgba(0, 224, 255, 0.8);
+}
+
+/* Divider line */
+.footer-divider {
+  border-color: rgba(255, 255, 255, 0.1);
+  width: 85%;
+  margin: 40px auto 20px;
+}
+
+/* Copyright */
+.footer-copy {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .footer-btn {
+    width: 80%;
+  }
+
+  .footer-social {
+    gap: 20px;
+  }
+
+  .footer-text {
+    font-size: 0.95rem;
+  }
+}
+
+}
+
+/* Footer icons */
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 2px solid #00e0ff;
+  color: #00e0ff;
+  font-size: 1.3rem;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  background-color: #00e0ff;
+  color: #000;
+  transform: translateY(-3px);
+  box-shadow: 0 0 15px rgba(0, 224, 255, 0.6);
+}
+
+/* Footer bottom line */
+.footer-bottom {
+  border-top: 1px solid #222;
+  margin-top: 40px;
+  padding-top: 15px;
+  font-size: 0.9rem;
+  color: #888;
+  text-align: center;
+}
+
+/* --------------------------
+   RESPONSIVE DESIGN
+---------------------------*/
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .footer-section {
+    text-align: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
+
+/* --------------------------
+   HEADER ACCENT BAR
+---------------------------*/
+.header-accent {
+  height: 3px;
+  background: linear-gradient(90deg, #00bcd4, #00e0ff);
+  box-shadow: 0 0 25px rgba(0, 224, 255, 0.4);
+}
+
+/* --------------------------
+   NAV LINK BOXES
+---------------------------*/
+.nav-link-box {
+  background-color: #00bcd4;
+  color: #000;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 10px 25px;
+  border-radius: 10px;
+  text-decoration: none;
+  box-shadow: 0 0 10px rgba(0, 224, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+/* Hover for nav box */
+.nav-link-box:hover {
+  background-color: #fff;
+  color: #000;
+  transform: translateY(-3px);
+  box-shadow: 0 0 25px rgba(0, 224, 255, 0.7);
+}
+
+/* Center navigation */
+.nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+
+/*  Centered Header Style */
+
+/* Centers and spaces everything evenly */
+.custom-navbar {
+  background-color: #000;
+  border-bottom: 2px solid rgba(0, 224, 255, 0.3);
+  box-shadow: 0 4px 25px rgba(0, 224, 255, 0.15);
+  padding: 70px 0 60px 0; /* more vertical spacing */
+  text-align: center;
+}
+
+/* Brand Name / Title */
+.glow-text {
+  color: #00e0ff !important;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-shadow: 0 0 15px rgba(0, 224, 255, 0.8);
+  transition: all 0.3s ease;
+  margin-bottom: 15px; /* spacing below name */
+}
+
+.glow-text:hover {
+  color: #fff !important;
+  text-shadow: 0 0 35px rgba(0, 224, 255, 1);
+  transform: scale(1.05);
+}
+
+/* Subtitle below name */
+.header-subtitle {
+  font-size: 1.15rem;
+  color: #b0b0b0;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  text-shadow: 0 0 8px rgba(0, 224, 255, 0.3);
+  margin-bottom: 40px; /* creates gap before nav */
+}
+
+/* Navigation layout */
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem; /* evenly space buttons */
+  flex-wrap: wrap;
+}
+
+/* Navigation buttons */
+.nav-link-box {
+  background-color: #00e0ff;
+  color: #000;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 14px 35px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 224, 255, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-link-box:hover {
+  background-color: #fff;
+  color: #000;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
+  transform: translateY(-4px);
+}
+
+/* Accent Line under header */
+.header-accent {
+  height: 4px;
+  background: linear-gradient(90deg, #00bcd4, #00e0ff, #00bcd4);
+  box-shadow: 0 0 25px rgba(0, 224, 255, 0.4);
+}

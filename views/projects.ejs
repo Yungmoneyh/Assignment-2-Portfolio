@@ -1,0 +1,50 @@
+<!-- Include the shared header partial and set the page title to "Projects" -->
+<%- include('partials/header', { title: 'Projects' }) %>
+
+<!-- Projects Section -->
+<section class="container">
+
+  <!-- Page Title -->
+  <h1>My Projects</h1>
+
+  <!-- Project 1: Networking Lab -->
+  <h2>Networking Lab: LAN & Routing</h2>
+  <p>
+    Configured a multi-subnet LAN using <strong>Cisco Packet Tracer</strong>. Implemented IP addressing, 
+    static and dynamic routing, tested connectivity, and troubleshot routing issues and subnet mistakes.
+  </p>
+
+  <!-- Project 2: Security Lab -->
+  <h2>Computer Security Lab: Spoofing Attacks</h2>
+  <p>
+    Simulated <strong>MAC spoofing</strong>, web cloning with <strong>NGINX</strong>, and <strong>DNS cache poisoning</strong> 
+    in a controlled environment using <strong>VirtualBox</strong>, <strong>Kali Linux</strong>, and <strong>Wireshark</strong>. 
+    Learned practical detection and mitigation techniques.
+  </p>
+
+  <!-- Project 3: Portfolio Site (This site itself) -->
+  <h2>Personal Portfolio</h2>
+  <p>
+    This site — built with <strong>Node.js</strong>, <strong>Express</strong>, and <strong>EJS</strong> — demonstrates my 
+    projects and skills. It’s designed to be simple, responsive, and professional for evaluation.
+  </p>
+
+  <!-- Project 4: Assignment 1 (Previous Portfolio) -->
+  <div class="project">
+    <h2>Assignment 1 — Personal Portfolio</h2>
+    <p>
+      My first professional portfolio built using <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong> 
+      to showcase my early web-development skills.
+    </p>
+
+    <!-- Link to first portfolio project hosted on GitHub Pages -->
+    <a href="https://yungmoneyh.github.io/hiro-portfolio/" target="_blank" class="btn-primary">
+      This was the first portfolio website I made
+    </a>
+  </div>
+
+</section>
+
+<!-- Include shared footer partial -->
+<%- include('partials/footer') %>
+
