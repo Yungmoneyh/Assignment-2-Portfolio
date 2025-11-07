@@ -45,3 +45,7 @@ All of the code was written by me as I have learned from the tutorials and lectu
 I only used the lecture notes provided and taught to me from class to help me complete this code. I didn't use any outside source for any of these codes. 
 
 I really enjoyed doing this assignment and it also helped dexpand my knowledge on Java even more. 
+
+## Live Deployment
+You can view my deployed and public portfolio here:  
+👉 [https://assignment-2-portfolio.onrender.com](https://assignment-2-portfolio.onrender.com)
