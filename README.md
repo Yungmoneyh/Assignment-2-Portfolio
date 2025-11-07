@@ -46,6 +46,11 @@ I only used the lecture notes provided and taught to me from class to help me co
 
 I really enjoyed doing this assignment and it also helped dexpand my knowledge on Java even more. 
 
-## Live Deployment
+Live Deployment
 You can view my deployed and public portfolio here:  
 👉 [https://assignment-2-portfolio-yzh4.onrender.com]
+
+## Note
+This site is hosted on Render's free instance. It may take 30–60 seconds to load after inactivity (showing a temporary 503 error).
+Please refresh the page once if it happens — the site will work normally after that. I have had this issue happen to me. 
+
